@@ -1,0 +1,11 @@
+<div class="text-align-right">
+    <!--<ul class="pagination" >
+        <li class="pagination-previous " *ngIf="pageNumber>1" (click)="handlePageClick(pageNumber-1)">
+            <a href="javascript:void(0)" aria-label="Next page">Previous <span class="show-for-sr">page</span></a></li>
+        <li class="pagination-next" *ngIf="hasMorePages" (click)="handlePageClick(pageNumber+1)">
+            <a href="javascript:void(0)" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+    </ul>-->
+
+    <button class="small button" [disabled]="pageNumber<2" href="#" (click)="handlePageClick(pageNumber-1)"><i class="fi-previous"></i> Previous page</button>
+    <button class="small button" [disabled]="!hasMorePages" href="#" (click)="handlePageClick(pageNumber+1)">Next page <i class="fi-next"></i></button>
+</div>
